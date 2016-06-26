@@ -1,0 +1,12 @@
+.topbar {
+    background-color: $blue;
+    height: 50px;
+    color: $white;
+    &__title {
+        padding: 15px 30px;
+        display: inline-block;
+    }
+}
+.subheader {
+    background-color: $lightblue;
+}

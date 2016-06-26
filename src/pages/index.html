@@ -1,0 +1,26 @@
+<!-- ANALOGUE/DIGITAL SWITCH GOES HERE -->
+<div class="subheader">
+    <div class="clockswitch">
+        <label class="clock__switch">
+            <input type="checkbox">
+            <div id="js-clockswitch" class="clock__slider"></div>
+        </label>
+        <div class="clock__switchtext">Analogue/Digital Switch</div>
+    </div>
+
+    <div class="todayinfo">
+        <div id="js-day" class="todayinfo__day"></div>
+        <div id="js-yeardays" class="todayinfo__yeardays"></div>
+        <div id="js-dst" class="todayinfo__dst"></div>
+    </div>
+</div>
+
+<!-- ANALOGUE CLOCK GOES HERE -->
+<div class="clock__analogue active">
+    <canvas id="canvas" width="400" height="400"></canvas>
+</div>
+
+<!-- Digital CLOCK GOES HERE -->
+<div class="clock__digital inactive">
+    <div id="js-digital" class="digital"></div>
+</div>

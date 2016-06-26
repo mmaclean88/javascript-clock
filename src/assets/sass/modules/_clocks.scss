@@ -1,0 +1,54 @@
+.clock {
+    &__digital {
+        background-color: black;
+        height: 100vh;
+        text-align: center;
+    }
+    &__analogue {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+}
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+.inactive { 
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s ease, opacity 1s ease;
+}
+.digital {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5rem;
+    color: $green;
+    padding-top: 20px;
+    animation: blinker 1s linear infinite;
+    .blink {
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+        animation: blink-animation 1s steps(5, start) infinite;
+    }
+    @keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+    @-webkit-keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+}
+
+@media only screen and (min-width: $screen-xs-min) {
+    .digital {
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (min-width: $screen-md-min) {
+    .digital {
+        font-size: 15rem;
+    }
+}

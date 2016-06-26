@@ -1,0 +1,11 @@
+.todayinfo {
+    display: inline-block;
+    padding: 15px 30px;
+    float: right;
+    > div {
+        padding: 3px 0;
+    }
+    .current {
+        font-weight: 700;
+    }
+}
